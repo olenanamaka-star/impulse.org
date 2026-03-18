@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Impulse</title>
+  <meta name="description" content="Privacy Policy for Impulse – Brain Training Games." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --surface2: #16161f;
+      --border: rgba(255,255,255,0.07);
+      --border2: rgba(255,255,255,0.12);
+      --text: #f0f0f5;
+      --muted: #8888a0;
+      --accent: #7b6ef6;
+      --accent2: #a78bfa;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.7; }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav { background: rgba(10,10,15,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 800px; margin: 0 auto; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 700; font-size: 18px; letter-spacing: -0.5px; display: flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; }
+    .logo-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+    .back-link { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; transition: color .2s; }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+
+    /* CONTENT */
+    .page-wrap { max-width: 800px; margin: 0 auto; padding: 64px 24px 100px; }
+    .page-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .page-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent2); background: rgba(167,139,250,0.1); padding: 4px 12px; border-radius: 6px; margin-bottom: 16px; }
+    .page-title { font-size: clamp(28px, 5vw, 40px); font-weight: 700; letter-spacing: -1px; color: #fff; line-height: 1.2; margin-bottom: 12px; }
+    .page-meta { font-size: 13px; color: var(--muted); }
+    .notice-box { background: var(--surface); border: 1px solid var(--border2); border-left: 3px solid var(--accent); border-radius: 10px; padding: 18px 20px; margin-bottom: 40px; font-size: 14px; color: var(--muted); line-height: 1.65; }
+    .notice-box strong { color: var(--text); display: block; margin-bottom: 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* SECTIONS */
+    .doc-section { margin-bottom: 48px; }
+    .doc-section h2 { font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); letter-spacing: -0.3px; }
+    .doc-section h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 20px 0 10px; }
+    .doc-section p { font-size: 15px; color: var(--muted); margin-bottom: 14px; font-weight: 300; line-height: 1.75; }
+    .doc-section ul { list-style: none; padding: 0; margin-bottom: 14px; }
+    .doc-section ul li { font-size: 15px; color: var(--muted); padding: 4px 0 4px 20px; position: relative; font-weight: 300; }
+    .doc-section ul li::before { content: '–'; position: absolute; left: 0; color: var(--accent); }
+    .doc-section a { color: var(--accent2); }
+
+    /* TOC */
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 28px; margin-bottom: 48px; }
+    .toc h4 { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+    .toc ol { list-style: none; counter-reset: toc-counter; padding: 0; }
+    .toc ol li { counter-increment: toc-counter; font-size: 14px; padding: 5px 0; font-weight: 300; }
+    .toc ol li::before { content: counter(toc-counter) '. '; color: var(--accent); font-weight: 500; }
+    .toc ol li a { color: var(--muted); transition: color .2s; }
+    .toc ol li a:hover { color: var(--text); text-decoration: none; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; }
+    .footer-inner { max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-inner p { font-size: 13px; color: var(--muted); font-weight: 300; }
+    .footer-inner a { font-size: 13px; color: var(--muted); }
+    .footer-inner a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><div class="logo-dot"></div>Impulse</a>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-header">
+    <span class="page-tag">Legal</span>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="page-meta">Effective as of: 16 December 2025 · Impulse – Brain Training Games</p>
+  </div>
+
+  <div class="notice-box">
+    <strong>Important Privacy Information</strong>
+    We do not ask you to provide any information about yourself when you use our App. However, we automatically collect device language settings, IP address, time zone, device type and model, device settings, operating system, Internet service provider, mobile carrier, hardware ID, Facebook ID, and other unique identifiers (such as IDFA and AAID). We need this data to provide our services, analyze how our customers use the app, and to serve and measure ads. Please contact us at <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a> if you have any questions.
+  </div>
+
+  <div class="toc">
+    <h4>Table of Contents</h4>
+    <ol>
+      <li><a href="#controller">Personal Data Controller</a></li>
+      <li><a href="#categories">Categories of Personal Data We Collect</a></li>
+      <li><a href="#purposes">For What Purposes We Process Personal Data</a></li>
+      <li><a href="#legal-bases">Legal Bases (EEA Users)</a></li>
+      <li><a href="#sharing">With Whom We Share Your Personal Data</a></li>
+      <li><a href="#rights">How You Can Exercise Your Privacy Rights</a></li>
+      <li><a href="#age">Age Limitation</a></li>
+      <li><a href="#transfers">International Data Transfers</a></li>
+      <li><a href="#changes">Changes to This Privacy Policy</a></li>
+      <li><a href="#california">California Privacy Rights</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#dnt">How "Do Not Track" Requests Are Handled</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <div class="doc-section" id="controller">
+    <h2>1. Personal Data Controller</h2>
+    <p>GMRD Apps Limited, a company duly registered under the laws of the Republic of Cyprus (with a registration address at Omonoias Avenue 13, Office 1C, Limassol 3052, Cyprus) will be the controller of your personal data.</p>
+  </div>
+
+  <div class="doc-section" id="categories">
+    <h2>2. Categories of Personal Data We Collect</h2>
+    <h3>Data you give us</h3>
+    <p>We do not ask you to provide information about yourself when you register for and/or use the Service. However, sometimes you may need to provide us your email address and some other information in communication with our Support Team in order to fulfill your request.</p>
+
+    <h3>Data we collect automatically</h3>
+    <p><strong style="color:var(--text);font-weight:500">Data about how you found us.</strong> We collect data about your referring app or URL (that is, the app or place on the Web where you were when you tapped on our ad).</p>
+    <p><strong style="color:var(--text);font-weight:500">Device and Location data.</strong> We collect data from your mobile device. Examples include: language settings, IP address, time zone, type and model of a device, device settings, operating system, Internet service provider, mobile carrier, hardware ID, and Facebook ID.</p>
+    <p><strong style="color:var(--text);font-weight:500">Usage data.</strong> We record how you interact with our Service — your taps on certain areas of the interface, the features and content you interact with, how often you use the App, how long you are in the App, what sections you use, and your App purchases.</p>
+    <p><strong style="color:var(--text);font-weight:500">Advertising IDs.</strong> We collect your Apple Identifier for Advertising ("IDFA") or Google Advertising ID ("AAID") depending on the operating system of your device. You can typically reset these numbers through your device's operating system settings.</p>
+  </div>
+
+  <div class="doc-section" id="purposes">
+    <h2>3. For What Purposes We Process Your Personal Data</h2>
+    <p>We process your personal data:</p>
+
+    <h3>To provide our Service</h3>
+    <p>This includes enabling you to use the Service in a seamless manner and preventing or addressing Service errors or technical issues. We use Crashlytics, Firebase Performance Monitoring, and Firebase Crash Reporting (provided by Google) to monitor infrastructure and the App's performance.</p>
+
+    <h3>To manage your account and provide customer support</h3>
+    <p>We process your personal data to respond to your requests for technical support, Service information, or any other communication you initiate. This includes accessing your account to address technical support requests and sending you notifications or emails about the Service's performance, security, payment transactions, or policy updates.</p>
+
+    <h3>To communicate with you regarding your use of our Service</h3>
+    <p>We communicate with you via push notifications — for example, reminders to finish your daily brain training. To opt out of push notifications, change the settings on your device. We use Firebase Cloud Messaging, Firebase Notifications, and Apple Push Notification service (APNs) for this purpose.</p>
+
+    <h3>To research and analyze your use of the Service</h3>
+    <p>This helps us maintain, improve, and develop the App and new products. We use the following analytics tools for this purpose:</p>
+    <ul>
+      <li><strong style="color:var(--text);font-weight:500">Appsflyer</strong> — to understand how users find us and analyze Service usage. <a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank">Privacy Policy</a></li>
+      <li><strong style="color:var(--text);font-weight:500">Facebook Analytics</strong> — aggregated demographics and interaction insights. <a href="https://www.facebook.com/policy.php" target="_blank">Privacy Policy</a></li>
+      <li><strong style="color:var(--text);font-weight:500">Firebase Remote Config</strong> — A/B testing and configuration service by Google</li>
+      <li><strong style="color:var(--text);font-weight:500">Amplitude</strong> — to understand how customers use our Service. Amplitude is EU-US Privacy Shield certified. <a href="https://amplitude.com/privacy" target="_blank">Privacy Policy</a></li>
+      <li><strong style="color:var(--text);font-weight:500">Firebase Analytics</strong> — analytics service by Google. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li><strong style="color:var(--text);font-weight:500">Fabric Answers / Crashlytics</strong> — product analytics by Google</li>
+      <li><strong style="color:var(--text);font-weight:500">Tableau</strong> — interactive data visualization for business intelligence</li>
+    </ul>
+
+    <h3>To send you marketing communications</h3>
+    <p>We process your personal data for our marketing campaigns. You may receive information about our products, special offers, and advertisements in our App.</p>
+
+    <h3>To personalize our ads</h3>
+    <p>We and our partners use your personal data to tailor our ads. We use Facebook Ads Manager with Facebook Custom Audience, Google Ads, and Appodeal for ad delivery and personalization.</p>
+    <p>To opt out of personalized advertising:</p>
+    <ul>
+      <li><strong style="color:var(--text);font-weight:500">iOS:</strong> Settings → Privacy → Advertising → Limit Ad Tracking</li>
+      <li><strong style="color:var(--text);font-weight:500">Android:</strong> Google Settings → Ads → Opt out of interest-based ads</li>
+    </ul>
+    <p>Additional opt-out resources: <a href="http://optout.networkadvertising.org/" target="_blank">Network Advertising Initiative</a> · <a href="http://optout.aboutads.info" target="_blank">Digital Advertising Alliance</a> · <a href="http://www.youronlinechoices.com/" target="_blank">DAA EU</a></p>
+
+    <h3>To enforce our Terms and to prevent fraud</h3>
+    <p>We use personal data to enforce our agreements, detect, prevent, and combat fraud. As a result of such processing, we may share your information with others, including law enforcement agencies.</p>
+
+    <h3>To comply with legal obligations</h3>
+    <p>We may process, use, or share your data when the law requires it.</p>
+  </div>
+
+  <div class="doc-section" id="legal-bases">
+    <h2>4. Legal Bases for Processing (EEA Users Only)</h2>
+    <p>We process your personal data under the following legal bases:</p>
+    <ul>
+      <li><strong style="color:var(--text);font-weight:500">Your consent</strong></li>
+      <li><strong style="color:var(--text);font-weight:500">To perform our contract with you</strong> — to provide the Service, manage your account, and communicate with you</li>
+      <li><strong style="color:var(--text);font-weight:500">Legitimate interests</strong> — to analyze usage, send marketing communications, personalize ads, enforce our Terms, and prevent fraud, unless those interests are overridden by your fundamental rights</li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="sharing">
+    <h2>5. With Whom We Share Your Personal Data</h2>
+    <h3>Service providers</h3>
+    <p>We share personal data with third parties that provide services on our behalf, including:</p>
+    <ul>
+      <li>Cloud storage providers</li>
+      <li>Data analytics providers (Facebook, Google, Appsflyer, Firebase, Crashlytics, Amplitude, Fabric, Tableau)</li>
+      <li>Marketing partners (Facebook, Google, Appodeal)</li>
+    </ul>
+    <h3>Law enforcement and public authorities</h3>
+    <p>We may disclose personal data to enforce our Terms, protect our rights or safety, or respond to requests from courts, law enforcement agencies, and regulatory authorities.</p>
+    <h3>Business transfers</h3>
+    <p>In the event of a merger, acquisition, or asset sale, customer information may be transferred as part of the transaction. We may also share information with any affiliated entity.</p>
+  </div>
+
+  <div class="doc-section" id="rights">
+    <h2>6. How You Can Exercise Your Privacy Rights</h2>
+    <p>To be in control of your personal data, you have the following rights:</p>
+    <ul>
+      <li><strong style="color:var(--text);font-weight:500">Access / review / update / correct</strong> your personal data in the App settings or by contacting us at <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a></li>
+      <li><strong style="color:var(--text);font-weight:500">Delete</strong> your personal data by sending a request to <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a></li>
+      <li><strong style="color:var(--text);font-weight:500">Object to or restrict</strong> the use of your personal data by contacting us at <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a></li>
+    </ul>
+    <h3>Additional rights for EEA users</h3>
+    <ul>
+      <li><strong style="color:var(--text);font-weight:500">Right to lodge a complaint</strong> with a supervisory authority in your EU Member State</li>
+      <li><strong style="color:var(--text);font-weight:500">Right to data portability</strong> — request your personal data in a machine-readable format at <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a></li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="age">
+    <h2>7. Age Limitation</h2>
+    <p>We do not knowingly process personal data from individuals under 16 years of age. If you learn that anyone younger than 16 has provided us with personal data, please contact us at <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a>.</p>
+  </div>
+
+  <div class="doc-section" id="transfers">
+    <h2>8. International Data Transfers</h2>
+    <p>We may transfer personal data to countries other than the country in which the data was originally collected. For transfers of personal data originating from the EEA to countries without an adequate level of data protection, we use one of the following legal bases:</p>
+    <ul>
+      <li>Standard Contractual Clauses approved by the European Commission</li>
+      <li>The EU-U.S. Privacy Shield Framework</li>
+      <li>European Commission adequacy decisions</li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="changes">
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may modify this Privacy Policy from time to time. If we decide to make material changes, you will be notified through our Service or by other available means and will have an opportunity to review the revised Policy. By continuing to use the Service after those changes become effective, you agree to be bound by the revised Privacy Policy.</p>
+  </div>
+
+  <div class="doc-section" id="california">
+    <h2>10. California Privacy Rights</h2>
+    <p>California's Shine the Light law gives California residents the right to ask companies once a year what personal information they share with third parties for direct marketing purposes. To obtain this information from us, please send an email to <a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a> with "Request for California Privacy Information" in the subject line and your state of residence and email address in the body.</p>
+  </div>
+
+  <div class="doc-section" id="retention">
+    <h2>11. Data Retention</h2>
+    <p>We will store your personal data for as long as reasonably necessary for achieving the purposes set forth in this Privacy Policy, including the period during which you have an account with the App. We will also retain and use your personal data as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+  </div>
+
+  <div class="doc-section" id="dnt">
+    <h2>12. How "Do Not Track" Requests Are Handled</h2>
+    <p>Except as otherwise stipulated in this Privacy Policy, this App does not support "Do Not Track" requests. To determine whether any of the third-party services it uses honor "Do Not Track" requests, please read their privacy policies.</p>
+  </div>
+
+  <div class="doc-section" id="contact">
+    <h2>13. Contact Us</h2>
+    <p>You may contact us at any time for details regarding this Privacy Policy and its previous versions. For any questions concerning your account or your personal data, please contact us at:</p>
+    <p><a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a></p>
+    <p>GMRD Apps Limited<br/>Omonoias Avenue 13, Office 1C<br/>Limassol 3052, Cyprus</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2025 Impulse (GMRD Apps Limited). All rights reserved.</p>
+    <div style="display:flex;gap:20px">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

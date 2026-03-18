@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Impulse</title>
+  <meta name="description" content="Terms and Conditions of Use for Impulse – Brain Training Games." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --surface2: #16161f;
+      --border: rgba(255,255,255,0.07);
+      --border2: rgba(255,255,255,0.12);
+      --text: #f0f0f5;
+      --muted: #8888a0;
+      --accent: #7b6ef6;
+      --accent2: #a78bfa;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.7; }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: rgba(10,10,15,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 800px; margin: 0 auto; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 700; font-size: 18px; letter-spacing: -0.5px; display: flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; }
+    .logo-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+    .back-link { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; transition: color .2s; }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+
+    .page-wrap { max-width: 800px; margin: 0 auto; padding: 64px 24px 100px; }
+    .page-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .page-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent2); background: rgba(167,139,250,0.1); padding: 4px 12px; border-radius: 6px; margin-bottom: 16px; }
+    .page-title { font-size: clamp(28px, 5vw, 40px); font-weight: 700; letter-spacing: -1px; color: #fff; line-height: 1.2; margin-bottom: 12px; }
+    .page-meta { font-size: 13px; color: var(--muted); }
+
+    .notice-box { background: var(--surface); border: 1px solid var(--border2); border-left: 3px solid #f59e0b; border-radius: 10px; padding: 18px 20px; margin-bottom: 40px; font-size: 14px; color: var(--muted); line-height: 1.65; }
+    .notice-box strong { color: #f59e0b; display: block; margin-bottom: 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+
+    .doc-section { margin-bottom: 48px; }
+    .doc-section h2 { font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); letter-spacing: -0.3px; }
+    .doc-section h3 { font-size: 15px; font-weight: 600; color: var(--text); margin: 20px 0 10px; }
+    .doc-section p { font-size: 15px; color: var(--muted); margin-bottom: 14px; font-weight: 300; line-height: 1.75; }
+    .doc-section ul { list-style: none; padding: 0; margin-bottom: 14px; }
+    .doc-section ul li { font-size: 15px; color: var(--muted); padding: 4px 0 4px 20px; position: relative; font-weight: 300; }
+    .doc-section ul li::before { content: '–'; position: absolute; left: 0; color: var(--accent); }
+    .doc-section a { color: var(--accent2); }
+    .caps { font-size: 14px; line-height: 1.7; }
+
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 28px; margin-bottom: 48px; }
+    .toc h4 { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+    .toc ol { list-style: none; counter-reset: toc-counter; padding: 0; }
+    .toc ol li { counter-increment: toc-counter; font-size: 14px; padding: 5px 0; font-weight: 300; }
+    .toc ol li::before { content: counter(toc-counter) '. '; color: var(--accent); font-weight: 500; }
+    .toc ol li a { color: var(--muted); transition: color .2s; }
+    .toc ol li a:hover { color: var(--text); text-decoration: none; }
+
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; }
+    .footer-inner { max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-inner p { font-size: 13px; color: var(--muted); font-weight: 300; }
+    .footer-inner a { font-size: 13px; color: var(--muted); }
+    .footer-inner a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><div class="logo-dot"></div>Impulse</a>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-header">
+    <span class="page-tag">Legal</span>
+    <h1 class="page-title">Terms and Conditions of Use</h1>
+    <p class="page-meta">Last updated: 16 December 2025 · Impulse – Brain Training Games</p>
+  </div>
+
+  <div class="notice-box">
+    <strong>⚠ Important — Please Read Before Use</strong>
+    This Service includes subscriptions that automatically renew. To avoid being charged, you must cancel a subscription or free trial in your App Store account settings at least 24 hours before the end of the free trial or current subscription period. Deleting the App does not cancel your subscriptions.
+  </div>
+
+  <div class="toc">
+    <h4>Table of Contents</h4>
+    <ol>
+      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#disclaimers">Important Disclaimers</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#app-stores">App Stores, Third Party Ads, Other Users</a></li>
+      <li><a href="#subscription">Subscription Fees and Payment</a></li>
+      <li><a href="#representations">User Representations and Restrictions</a></li>
+      <li><a href="#warranties">Disclaimer of Warranties</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#indemnity">Indemnity</a></li>
+      <li><a href="#international">International Use</a></li>
+      <li><a href="#arbitration">Mandatory Binding Arbitration and Class Action Waiver</a></li>
+      <li><a href="#governing-law">Governing Law</a></li>
+      <li><a href="#misc">Miscellaneous Provisions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <div class="doc-section" id="acceptance">
+    <h2>1. Acceptance of Terms</h2>
+    <p>Mobile application Impulse – Brain Training Games (the "App") and content available via the App or our emails ("Content") are distributed by GMRD Apps Limited or other company as stated in an app store ("we", "us", "our" or the "Company"). The App, together with the Content, tools, transactions and other services available by using the App, are collectively referred to as the "Service".</p>
+    <p>Your access and use of the Service constitutes your agreement to be bound by these Terms and Conditions of Use (the "Terms"), which establishes a legally binding contractual relationship between you and the Company. Please read the Terms carefully before using the Service.</p>
+    <p>Please review also our <a href="privacy.html">Privacy Policy</a>. We reserve the right, in our sole discretion, to make changes or modifications to these Terms at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of these Terms.</p>
+    <p class="caps">These Terms contain important disclaimers, disclaimers of warranties, limitation of liability, as well as provisions that waive your right to a jury trial, right to a court hearing, and right to participate in a class action (arbitration and class action waiver). Unless you opt out within 30 days of first use as provided for in Section 11, arbitration is the exclusive remedy for any and all disputes.</p>
+  </div>
+
+  <div class="doc-section" id="disclaimers">
+    <h2>2. Important Disclaimers</h2>
+    <p class="caps">We make no guarantees that (i) the Service will meet your requirements, (ii) the Service will be uninterrupted, timely, secure, or error-free, (iii) the results obtained from use of the Service will be accurate or reliable, or (iv) the quality of any products, services, or information obtained through the Service will meet your expectations.</p>
+    <p class="caps">We further make no guarantees concerning the level of success you may experience. Testimonials and examples that may be provided on the Service are exceptional results which may not apply to an average person, and are not intended to represent or guarantee that anyone will achieve the same or similar results.</p>
+  </div>
+
+  <div class="doc-section" id="service">
+    <h2>3. Service</h2>
+    <p>All text, images, marks, logos, data, software and materials displayed on or used to operate the Service are proprietary to us or to third parties. The Company expressly reserves all rights, including all intellectual property rights, in all of the foregoing. Any use, redistribution, sale, decompilation, reverse engineering, disassembly, translation or other exploitation is strictly prohibited.</p>
+    <p>The information you submit and any data or content you post to the App ("User Content") remain your intellectual property. You grant the Company a non-exclusive, worldwide, transferable, perpetual, irrevocable license to publish, distribute, publicly display and perform the User Content in connection with the Service.</p>
+    <p>Subject to these Terms, the Company grants you a non-transferable, non-exclusive license to use the Service solely for your personal, non-commercial purposes and to install and use the App solely on your own handheld mobile device.</p>
+    <p>We retain the right to implement any changes to the Service at any time, with or without notice. Your access to and use of the Service is at your own risk.</p>
+  </div>
+
+  <div class="doc-section" id="app-stores">
+    <h2>4. App Stores, Third Party Ads, Other Users</h2>
+    <p>You acknowledge that the availability of the App is dependent on the third party from which you received the App (e.g. the Apple App Store, Google Play). You agree to comply with all applicable agreements, terms, and policies of those App Stores. You acknowledge that the App Stores (and their subsidiaries) are third-party beneficiaries of these Terms.</p>
+    <p>The Service may contain links to third-party websites or resources and advertisements for third parties ("Third Party Ads"). The Company is not responsible for any Third Party Ads and makes no representations with respect to them. You acknowledge sole responsibility for and assume all risk arising from your use of any such websites or resources.</p>
+    <p>Each user of the Service is solely responsible for any and all of their User Content. Your interactions with other Service users are solely between you and such user.</p>
+  </div>
+
+  <div class="doc-section" id="subscription">
+    <h2>5. Subscription Fees and Payment</h2>
+    <p>The App is free to download. However, certain features of the Service may be offered on a subscription basis for a fee, either by recurring interval or pre-payment for a specific time period.</p>
+    <p>We may change purchase fees at any time with reasonable notice. By signing up for certain subscriptions, you agree that your subscription may be automatically renewed. Unless you cancel your subscription, you authorize the App Store to charge you for the renewal term at no more than the rate for the immediately prior subscription period.</p>
+    <p>We may offer a free trial subscription. Unless you cancel before the end of the free trial, your access to the Service will automatically continue and you will be billed the applicable fees. It is ultimately your responsibility to know when the free trial will end.</p>
+    <p class="caps">Subscriptions purchased via an App Store are subject to such App Store's refund policies — we cannot grant refunds. You will have to contact the App Store support. All purchases are final and non-refundable. Since the Service is of a digital nature, your right of withdrawal is lost at the point of purchase.</p>
+  </div>
+
+  <div class="doc-section" id="representations">
+    <h2>6. User Representations and Restrictions</h2>
+    <p>By using the Service, you represent and warrant that you have the legal capacity to agree to these Terms, you are not under the age of 16, and your use of the Service will not violate any applicable law or regulation.</p>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Systematically retrieve data to create or compile any collection or database without our written permission</li>
+      <li>Make any modification, adaptation, translation, or derivative work from the Service</li>
+      <li>Use the Service for any revenue-generating or commercial purposes not approved by us</li>
+      <li>Use the Service for creating a product or service competitive with the Service</li>
+      <li>Circumvent, disable, or interfere with security-related features of the Service</li>
+      <li>Decipher, decompile, disassemble, or reverse engineer any software making up the Service</li>
+      <li>Upload files containing viruses, worms, trojans, or any similar harmful software</li>
+      <li>Use any automated system, spider, robot, scraper, or offline reader to access the Service</li>
+      <li>Use the Service in a manner inconsistent with any applicable laws or regulations</li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="warranties">
+    <h2>7. Disclaimer of Warranties</h2>
+    <p class="caps">The App, Content, and other aspects of the Service are provided "as is" and "as available" without representation or warranty of any kind, express or implied, including but not limited to the implied warranties of title, non-infringement, integration, merchantability, and fitness for a particular purpose. The Company and its affiliates, licensors, and suppliers do not warrant that the Service will be secure, available at any particular time or place, or free of viruses or other harmful components.</p>
+  </div>
+
+  <div class="doc-section" id="liability">
+    <h2>8. Limitation of Liability</h2>
+    <p class="caps">In no event shall we (and our affiliates) be liable to you or any third party for any lost profit or any indirect, consequential, exemplary, incidental, special, or punitive damages arising from these Terms or your use of, or inability to use, the Service, even if we have been advised of the possibility of such damages.</p>
+    <p class="caps">The aggregate liability of the Company to you for any and all claims arising from the use of the App, Content, or Service is limited to the amounts you have paid to the Company for access to and use of the Service.</p>
+    <p>Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, so the above limitation may not apply to you.</p>
+  </div>
+
+  <div class="doc-section" id="indemnity">
+    <h2>9. Indemnity</h2>
+    <p>You agree to indemnify and hold the Company, its successors, subsidiaries, affiliates, suppliers, licensors, partners, and their officers, directors, employees, agents and representatives harmless, including costs and attorneys' fees, from any claim or demand made by any third party due to or arising out of (i) your use of the Service, (ii) your User Content, or (iii) your violation of these Terms.</p>
+  </div>
+
+  <div class="doc-section" id="international">
+    <h2>10. International Use</h2>
+    <p>The Company makes no representation that the Service is accessible, appropriate, or legally available for use in your jurisdiction. Accessing and using the Service is prohibited from territories where doing so would be illegal. You access the Service at your own initiative and are responsible for compliance with local laws.</p>
+  </div>
+
+  <div class="doc-section" id="arbitration">
+    <h2>11. Mandatory Binding Arbitration and Class Action Waiver</h2>
+    <p class="caps">Please read this arbitration provision carefully to understand your rights. Except where prohibited by law, you agree that any claim you may have in the future must be resolved through final and binding confidential arbitration. You acknowledge and agree that you are waiving the right to a trial by jury.</p>
+    <p class="caps">You agree that you may only bring a claim in your individual capacity and not as a plaintiff or class member in any purported class or representative proceeding.</p>
+    <p>The American Arbitration Association ("AAA") will exclusively administer the arbitration in accordance with its Commercial Arbitration Rules and the Supplementary Procedures for Consumer Related Disputes, as modified by these Terms. See <a href="http://www.adr.org" target="_blank">www.adr.org</a>.</p>
+    <p>A party intending to seek arbitration must first send a written notice of intent to the other party. For the Company: Omonoias Avenue 13, Office 1C, Limassol 3052, Cyprus. If no agreement is reached within 30 days, either party may commence arbitration.</p>
+    <p>The arbitration will be conducted exclusively in English, online and/or based on written submissions, without personal appearances unless mutually agreed. The arbitrator shall apply the laws of the Commonwealth of Virginia.</p>
+    <p class="caps">You have the right to opt out of this arbitration provision within 30 days from the date you first use the Service by writing to <a href="mailto:support@brainimpulse.me" style="color:var(--accent2)">support@brainimpulse.me</a> or to the Arbitration Notice Address. After 30 days, you must pursue your claim through binding arbitration.</p>
+  </div>
+
+  <div class="doc-section" id="governing-law">
+    <h2>12. Governing Law</h2>
+    <p>The laws of England and Wales govern these Terms and your use of the Service. To the extent that any action is permitted to be brought in a court of law:</p>
+    <ul>
+      <li>If you are a resident of the United States — the state and federal courts in the City of Alexandria, Virginia</li>
+      <li>If you are not a resident of the United States — the courts of Nicosia, Cyprus</li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="misc">
+    <h2>13. Miscellaneous Provisions</h2>
+    <p>These Terms set forth the entire agreement between you and the Company regarding its subject matter. The Company may transfer or assign any and all of its rights and obligations under these Terms to any other person. If any provision of these Terms is found to be invalid or unenforceable, the Terms will remain in full force and will be reformed to reflect the intent of the parties to the greatest extent permitted by law.</p>
+    <p>All information communicated on the Service is considered an electronic communication. By clicking on buttons labeled "SUBMIT", "CONTINUE", "REGISTER", or "I AGREE", you are submitting a legally binding electronic signature and entering into a legally binding contract.</p>
+  </div>
+
+  <div class="doc-section" id="contact">
+    <h2>14. Contact</h2>
+    <p>If you want to send any notice under these Terms or have any questions regarding the Service, you may contact us at:</p>
+    <p><a href="mailto:support@brainimpulse.me">support@brainimpulse.me</a></p>
+    <p>GMRD Apps Limited<br/>Omonoias Avenue 13, Office 1C<br/>Limassol 3052, Cyprus</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2025 Impulse (GMRD Apps Limited). All rights reserved.</p>
+    <div style="display:flex;gap:20px">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
